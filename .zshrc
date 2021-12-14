@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias rebase="gco master && gl && gco - && git rebase master"
+alias rebase="gco main && gl && gco - && git rebase main"
 alias amend="git add . && git commit --amend --no-edit"
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
