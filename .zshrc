@@ -102,6 +102,12 @@ source $ZSH/oh-my-zsh.sh
 
 alias rebase="gco main && gl && gco - && git rebase main"
 alias amend="git add . && git commit --amend --no-edit"
+alias style="bin/style --include-branch-commits"
+alias dsl="bin/tapioca dsl"
+alias type="bin/srb typecheck"
+alias schema="bin/rake graphql:schema:dump SCHEMA_NAME=admin"
+alias t="bin/test"
+alias rc="bin/rails c"
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 if [ -e /Users/neil/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/neil/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
